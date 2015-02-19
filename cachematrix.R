@@ -25,7 +25,7 @@ makeCacheMatrix <- function(m = matrix()) {
 
 cacheSolve <- function(m) {
   
-        ## Return a matrix that is the inverse of 'x'
+        ## Return a matrix that is the inverse of 'm'
   
   I <- m$getInverse()      # Attempt to check cache
   if(!is.null(I) && identical(solve(m),I)) {
